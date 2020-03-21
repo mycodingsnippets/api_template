@@ -1,0 +1,606 @@
+2020-03-21 11:51:11 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 11:51:11 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_PURPOSE' => 'prefetch'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '56802'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2proj/api/'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584787871.751
+    'REQUEST_TIME' => 1584787871
+]
+2020-03-21 11:56:21 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/index". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/index', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 11:56:20 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57199'
+    'REDIRECT_URL' => '/yii2proj/api/v1/index'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/yii2proj/api/v1/index?id=1'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788180.99
+    'REQUEST_TIME' => 1584788180
+]
+2020-03-21 11:56:39 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Missing required parameters: id in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Controller.php:170
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#3 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/inde...', Array)
+#4 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#6 {main}
+2020-03-21 11:56:39 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = [
+    'number' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57229'
+    'REDIRECT_URL' => '/yii2proj/api/v1/default/index'
+    'REDIRECT_QUERY_STRING' => 'number=1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'number=1'
+    'REQUEST_URI' => '/yii2proj/api/v1/default/index?number=1'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788199.225
+    'REQUEST_TIME' => 1584788199
+]
+2020-03-21 11:59:06 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/default/index/one". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/inde...', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 11:59:06 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57404'
+    'REDIRECT_URL' => '/yii2proj/api/v1/default/index/one'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2proj/api/v1/default/index/one'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788346.686
+    'REQUEST_TIME' => 1584788346
+]
+2020-03-21 12:01:29 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/main/aditya". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/main/aditya', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:01:29 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57589'
+    'REDIRECT_URL' => '/yii2proj/api/v1/main/aditya'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2proj/api/v1/main/aditya'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788489.754
+    'REQUEST_TIME' => 1584788489
+]
+2020-03-21 12:01:36 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/default/index/aditya". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/inde...', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:01:36 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57590'
+    'REDIRECT_URL' => '/yii2proj/api/v1/default/index/aditya'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2proj/api/v1/default/index/aditya'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788496.515
+    'REQUEST_TIME' => 1584788496
+]
+2020-03-21 12:02:17 [::1][-][bksh4runm71shetgktjbn1fduj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/default/index/aditya". in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('v1/default/inde...', Array)
+#1 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii2proj\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2proj\api\index.php(19): yii\base\Application->run()
+#2 {main}
+2020-03-21 12:02:17 [::1][-][bksh4runm71shetgktjbn1fduj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'bksh4runm71shetgktjbn1fduj'
+    '_csrf-backend' => '3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"jIoa3gWD9GiQBekeZoIiFCWburwKinKs\";}'
+    'advanced-frontend' => '46s1s6t4ce926ffsb6hbcl71oq'
+    '_identity-frontend' => '290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:16:\"[1,null,2592000]\";}'
+    '_csrf-frontend' => 'd98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://localhost/yii2proj/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.69 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,hi;q=0.6'
+    'HTTP_COOKIE' => 'advanced-backend=bksh4runm71shetgktjbn1fduj; _csrf-backend=3ecffa621525cc7b59c822041971f33c25ce0e58a585b89f853fbc73afe5f744a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22jIoa3gWD9GiQBekeZoIiFCWburwKinKs%22%3B%7D; advanced-frontend=46s1s6t4ce926ffsb6hbcl71oq; _identity-frontend=290d787d30f829f188cad820a983a30ddb0d09a615429bcfdb301ab9d4d9c1e2a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A16%3A%22%5B1%2Cnull%2C2592000%5D%22%3B%7D; _csrf-frontend=d98d9f7cf126343035ff72d37c2838acb78ff87c6c522a2fcf4ffcedd0bcccaca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22ucV4LAjf1H1QAQy5J6qjIYb5knhXXJm3%22%3B%7D'
+    'PATH' => 'C:\\Python27\\;C:\\Python27\\Scripts;C:\\app\\y509120-er\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Java\\jdk1.8.0_231\\bin;C:\\apache-maven-3.6.2\\bin;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\y509120\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\y509120\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\y509120\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\xampp\\php;C:\\Users\\y509120\\AppData\\Local\\ComposerSetup\\bin;C:\\Users\\y509120\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\y509120\\AppData\\Roaming\\npm;C:\\Users\\y509120\\AppData\\Local\\Programs\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.41 (Win64) OpenSSL/1.1.1c PHP/7.2.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii2proj/api/index.php'
+    'REMOTE_PORT' => '57643'
+    'REDIRECT_URL' => '/yii2proj/api/v1/default/index/aditya'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2proj/api/v1/default/index/aditya'
+    'SCRIPT_NAME' => '/yii2proj/api/index.php'
+    'PHP_SELF' => '/yii2proj/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1584788537.616
+    'REQUEST_TIME' => 1584788537
+]
