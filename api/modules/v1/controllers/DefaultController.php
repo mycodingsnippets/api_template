@@ -15,4 +15,9 @@ class DefaultController extends Controller
     public function actionTest($id){
         echo $id;
     }
+
+    public function actionContentRender(){
+        $this->layout = 'main';
+        return $this->renderContent("Aditya Bansal");
+    }
 }
