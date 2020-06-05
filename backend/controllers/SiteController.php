@@ -1,6 +1,9 @@
 <?php
 namespace backend\controllers;
 
+use common\models\Subscriber;
+use common\models\Videos;
+use common\models\VideosView;
 use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -12,9 +15,6 @@ use common\models\LoginForm;
  */
 class SiteController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
     public function behaviors()
     {
         return [
@@ -41,9 +41,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
     public function actions()
     {
         return [
@@ -53,23 +50,55 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
     public function actionIndex()
     {
-        return $this->render('index');
+        $userId = Yii::$app->user->id;
+        $user = Yii::$app->user->identity;
+
+        $latestVideo = Videos::find()
+                        ->latest()
+                        ->creator($userId)
+                        ->limit(1)
+                        ->one();
+
+        $numberOfView = VideosView::find()
+                            ->alias('vv')
+                            ->innerJoin(
+                                Videos::tableName() . ' v',
+                                'v.video_id = vv.video_id'
+                            )
+                            ->andWhere([
+                                'v.created_by' => $userId
+                            ])
+                            ->count();
+
+        $numberOfSubscribers = Yii::$app->cache->get('subscribers-'.$userId);
+        if(!$numberOfSubscribers){
+            $numberOfSubscribers = $user->getSubscribers()->count();
+            Yii::$app->cache->set('subscribers-'.$userId, $numberOfSubscribers);
+        }
+
+        $subscribers = Subscriber::find()
+                        ->with('user')
+                        ->andWhere([
+                            'channel_id' => $userId
+                        ])
+                        ->orderBy('created_at DESC')
+                        ->limit(3)
+                        ->all();
+
+        return $this->render('index', [
+            'latestVideo' => $latestVideo,
+            'numberOfView' => $numberOfView,
+            'numberOfSubscribers' => $numberOfSubscribers,
+            'subscribers' => $subscribers
+        ]);
     }
 
-    /**
-     * Login action.
-     *
-     * @return string
-     */
     public function actionLogin()
     {
+        $this->layout = 'auth';
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -86,11 +115,6 @@ class SiteController extends Controller
         }
     }
 
-    /**
-     * Logout action.
-     *
-     * @return string
-     */
     public function actionLogout()
     {
         Yii::$app->user->logout();

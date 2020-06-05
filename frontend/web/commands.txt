@@ -1,3 +1,16 @@
 * php yii migrate/create create_users_table --fields="username:string(255):notNull(),password_hash:string(512):notNull(),access_token:string(1024)"
-* >php yii migrate/create create_notes_table --fields="title:string(255),body:text(),created_at:integer(11),updated_at:integer(11),created_by:integer(11):foreignKey(users)"
-*
+* php yii migrate/create create_notes_table --fields="title:string(255),body:text(),created_at:integer(11),updated_at:integer(11),created_by:integer(11):foreignKey(users)"
+* composer remove yiisoft/yii2-bootstrap
+* composer require yiisoft/yii2-bootstrap4
+* php yii migrate/create create_videos_table --fields="video_id:string(16):notNull,title:string(512):notNull,description:text(),created_by:integer(11):foreignKey(user)"
+* composer require yiisoft/yii2-imagine
+* php yii migrate/create create_video_view_table --fields="video_id:string(16):notNull:foreignKey(videos), user_id:integer(11):foreignKey(users), created_at:integer(11)"
+* php yii migrate/create create_video_like_table --fields="video_id:string(16):notNull:foreignKey(videos), user_id:integer(11):notNull:foreignKey(users), type:integer(1):notNull, created_at:integer(11)"
+* php yii migrate/create create_subscriber_table --fields="channel_id:integer(11):foreignKey(users), user_id:integer(11):foreignKey(users), created_at:integer(11)"
+* php yii migrate/create create_fulltext_index_on_video
+* SQL QUERY FOR HISTORY
+SELECT v.* FROM videos v
+INNER JOIN (SELECT video_id, MAX(created_at) AS max_date FROM video_view WHERE user_id=3 GROUP BY video_id)
+AS vv
+ON vv.video_id = v.video_id
+ORDER BY vv.max_date DESC

@@ -4,50 +4,50 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
-
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+<div class="site-index d-flex">
+    <div class="card m-2" style="width: 14rem;">
+        <?php if($latestVideo): ?>
+        <div class="embed-responsive embed-responsive-16by9 mb-3">
+            <video class="embed-responsive-item"
+                   src="<?= $latestVideo->getVideoLink() ?>"
+                   poster="<?= $latestVideo->getThumbnailLink() ?>"></video>
         </div>
-
+        <div class="card-body">
+            <h6 class="card-title"><?= $latestVideo->title ?></h6>
+            <p class="card-text">
+                Likes: <?=  $latestVideo->getLikes()->count() ?>
+                Views: <?=  $latestVideo->getViews()->count() ?>
+            </p>
+            <a href="<?= \yii\helpers\Url::to(['videos/update', 'id' => $latestVideo->video_id])?>" class="btn btn-primary">Edit</a>
+        </div>
+        <?php else: ?>
+            <div class="card-body">
+                You haven't uploaded any videos yet
+            </div>
+        <?php endif; ?>
+    </div>
+    <div class="card m-2" style="width: 14rem;">
+        <div class="card-body">
+            <h6 class="card-title">Total Views</h6>
+            <p class="card-text" style="font-size: 72px;">
+                <?= $numberOfView ?>
+            </p>
+        </div>
+    </div>
+    <div class="card m-2" style="width: 14rem;">
+        <div class="card-body">
+            <h6 class="card-title">Total Subscriber</h6>
+            <p class="card-text" style="font-size: 72px;">
+                <?= $numberOfSubscribers ?>
+            </p>
+        </div>
+    </div>
+    <div class="card m-2" style="width: 14rem;">
+        <div class="card-body">
+            <h6 class="card-title">Latest Subscribers</h6>
+            <?php foreach ($subscribers as $subscriber): ?>
+                <div><?= $subscriber->user->username ?></div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </div>
