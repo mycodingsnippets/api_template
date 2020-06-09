@@ -9,8 +9,8 @@
 * php yii migrate/create create_subscriber_table --fields="channel_id:integer(11):foreignKey(users), user_id:integer(11):foreignKey(users), created_at:integer(11)"
 * php yii migrate/create create_fulltext_index_on_video
 * SQL QUERY FOR HISTORY
-SELECT v.* FROM videos v
-INNER JOIN (SELECT video_id, MAX(created_at) AS max_date FROM video_view WHERE user_id=3 GROUP BY video_id)
-AS vv
-ON vv.video_id = v.video_id
-ORDER BY vv.max_date DESC
+    SELECT v.* FROM videos v
+    INNER JOIN (SELECT video_id, MAX(created_at) AS max_date FROM video_view WHERE user_id=3 GROUP BY video_id)
+    AS vv
+    ON vv.video_id = v.video_id
+    ORDER BY vv.max_date DESC
